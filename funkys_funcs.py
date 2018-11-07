@@ -1,4 +1,5 @@
 def append_tts(x_train, x_test, y_train, y_test, descr, t_sets):
+    val = len(t_sets)
     li=[]
     li.append(descr)
     li.append(x_train)
@@ -7,7 +8,7 @@ def append_tts(x_train, x_test, y_train, y_test, descr, t_sets):
     li.append(y_test)
     t_sets.append(li)
 
-    return len(t_sets)
+    return (val)
 
 def make_tsets_keylist(list_Xs, y, t_size, t_set_list, name_list):
     for list_X in listXs:
